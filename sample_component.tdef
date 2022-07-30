@@ -1,0 +1,19 @@
+Sample_Component{#x;#y}[rn]
+<Entity>
+
+<!-- properties defined in the header (prior to the [rn] on the top line) can be passed in and used in the logic of the component -->
+<Entity X={{x}} Y={{y}} W='32' H='32'>
+<MyImage CycleLength='32'>
+<ImageFrames>
+
+<!-- a novel feature of the ClearwingGames Object Model is that the lines between games logic and content can be blurred -->
+<ImageFrame DelimitedGrid='0,0,0,0;1,1,1,1;0,0,0,0;' HexCSVKey='FF0000,00FF00'>
+</ImageFrame>
+
+<!-- both images and audio can be templated with components or they can be externally created and referenced in part of the build pipeline -->
+<ImageFrame DelimitedGrid='0,0,0,0;1,1,1,1;0,0,0,0;' HexCSVKey='00FF00,FF0000'>
+</ImageFrame>
+
+</ImageFrames>
+</MyImage>
+</Entity>

@@ -1,0 +1,20 @@
+<Game>
+<SceneContexts>
+<SceneContext>
+<Scenes>
+<Scene>
+<Entities>
+
+<!-- external components can be defined in .tdef files and used as though they were inherent to the games object model!  Components can also contain other components -->
+for (int i = 0; i < 3; i++)
+{
+<Sample_Component x={((i * 32) + 32)} Y={(32)} />
+}
+<!-- and as always, you can template any part of the markup code using a Razor-like syntax with C#! -->
+
+</Entities>
+</Scene>
+</Scenes>
+</SceneContext>
+</SceneContexts>
+</Game>
